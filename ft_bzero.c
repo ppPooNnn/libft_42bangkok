@@ -10,5 +10,4 @@ void	ft_bzero (void *s, size_t n)
 		*(char *)(s + count) = '\0';
 		count++;
 	}
-	return (s);
 }
