@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Aug 03 02:54:32 2022
+# Make data base, printed on Wed Aug 03 03:06:24 2022
 
 # Variables
 
@@ -48,8 +48,7 @@ TMP = C:\Users\pun_y\AppData\Local\Temp
 # environment
 PROGRAMW6432 = C:\Program Files
 # makefile (from 'Makefile', line 19)
-OBJS = ${SRCS:.c=.o 
-}
+OBJS = ${SRCS:.c=.o}
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
@@ -88,7 +87,8 @@ ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 USERNAME = pun_y
 # environment
 PUBLIC = C:\Users\Public
-# environment
+# enviro 
+nment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\pun_y\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
@@ -111,7 +111,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from 'Makefile', line 17)
-SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memset.c
+SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memset.c ft_bzero.c
 # default
 MAKE_VERSION := 3.82.90
 # makefile
@@ -208,7 +208,7 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1651875691): 5 files, no impossibilities.
 # C:\windows\System32\WindowsPowerShell\v1.0\ (key C:/windows/System32/WindowsPowerShell/v1.0/, mtime 1651879278): 30 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
-# . (key c:/Poon's works/libft_42bangkok, mtime 1659469411): 19 files, no impossibilities.
+# . (key c:/Poon's works/libft_42bangkok, mtime 1659470641): 20 files, no impossibilities.
 # C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps (key C:/Users/pun_y/AppData/Local/Microsoft/WindowsApps, mtime 1659415239): 38 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1659360780): 8 files, no impossibilities.
 # C:\windows\System32\OpenSSH\: could not be stat'd.
@@ -219,13 +219,13 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 # C:\windows\System32\Wbem (key C:/windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1658831179): 126 files, no impossibilities.
 # C:\msys64\mingw64\bin (key C:/msys64/mingw64/bin, mtime 1658055518): 211 files, no impossibilities.
-# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1651879278): 30 files, 
- no impossibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1651879278) 
+: 30 files, no impossibilities.
 # C:\windows\system32 (key C:/windows/system32, mtime 1659367714): 2994 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\Windows\system32 (key C:/Windows/system32, mtime 1659367714): 2994 files, no impossibilities.
 
-# 6912 files, no impossibilities in 18 directories.
+# 6913 files, no impossibilities in 18 directories.
 
 # Implicit Rules
 
@@ -279,7 +279,7 @@ ft_strrchr.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-03 02:53:15
+#  Last modified 2022-08-03 03:06:22
 #  File has been updated.
 #  Successfully updated.
 
@@ -289,12 +289,18 @@ ft_isprint.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-libft.a: ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memset.o
+libft.a: ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memset.o ft_bzero.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	ar rcs $(NAME) $(OBJS)
+
+# Not a target:
+ft_bzero.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
@@ -373,24 +379,24 @@ ft_isascii.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=22/1024=2%, Rehash=0, Collisions=2/54=4%
+# Load=23/1024=2%, Rehash=0, Collisions=4/56=7%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (5) / string 
+# strcache buffers: 7 (5) / strings = 3603 / storage = 54400 B / avg = 15 B
+# current buf: size = 8174 B / used = 5407 B / count = 331 / avg = 16 B
+# other used: total = 46226 B / count = 3272 / avg = 14 B
+# other free: total = 51 B / max = 25 B / min = 2 B / avg = 8 B
+
+# strcache performance: lookups = 6971 / hit rate = 48%
+# hash-table stats:
+# Load=3603/8192=44%, Rehash=0, Collisi 
 make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
 
-s = 3601 / storage = 54378 B / avg = 15 B
-# current buf: size = 8174 B / used = 5396 B / count = 330 / avg = 16 B
-# other used: total = 46204 B / count = 3271 / avg = 14 B
-# other free: total = 62 B / max = 25 B / min = 2 B / avg = 10 B
-
-# strcache performance: lookups = 6969 / hit rate = 48%
-# hash-table stats:
-# Load=3601/8192=44%, Rehash=0, Collisions=2259/6969=32%
-# Finished Make data base on Wed Aug 03 02:54:32 2022
+ons=2259/6971=32%
+# Finished Make data base on Wed Aug 03 03:06:24 2022
 
  
