@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/31 23:24:12 by puttasa           #+#    #+#              #
-#    Updated: 2022/08/02 15:47:50 by marvin           ###   ########.fr        #
+#    Updated: 2022/08/02 16:34:47 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,3 +33,5 @@ fclean: clean
 	rm -f  $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
