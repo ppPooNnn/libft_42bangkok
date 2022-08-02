@@ -22,6 +22,8 @@ gcc -Wall -Wextra -Werror -c ft_strrchr.c -o ft_strrchr.o
  
 gcc -Wall -Wextra -Werror -c ft_strncmp.c -o ft_strncmp.o
  
-ar rcs libft.a ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o
+gcc -Wall -Wextra -Werror -c ft_memset.c -o ft_memset.o
+ 
+ar rcs libft.a ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memset.o
 make.exe: Leaving directory 'c:/Poon's works/libft_42bangkok'
  
