@@ -6,10 +6,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
  
-FIND: Parameter format not correct
 
-
-# Make data base, printed on Tue Aug 02 16:31:19 2022
+# Make data base, printed on Tue Aug 02 22:22:04 2022
 
 # Variables
 
@@ -33,7 +31,8 @@ HOMEDRIVE = C:
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
 CURDIR := c:/Poon's works/libft_42bangkok
-# default
+# 
+ default
 SHELL := sh.exe
 # environment
 WINDIR = C:\Windows
@@ -49,8 +48,8 @@ MAKEFILE_LIST :=  Makefile
 TMP = C:\Users\pun_y\AppData\Local\Temp
 # environment
 PROGRAMW6432 = C:\Program Files
-# makefile (from 'Makefile', line 17)
-OBJS := 
+# makefile (from 'Makefile', line 19)
+OBJS = ${SRCS:.c=.o}
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
@@ -76,7 +75,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6344_CQVKRZXDWBBVSYPB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21824_GHOEECSDXPCZNNXS
 # environment
 COMPUTERNAME = POONCOM
 # environment
@@ -111,8 +110,8 @@ MAKELEVEL := 0
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
-# makefile (from 'Makefile', line 15)
-SRCS := 
+# makefile (from 'Makefile', line 17)
+SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c
 # default
 MAKE_VERSION := 3.82.90
 # makefile
@@ -183,6 +182,8 @@ SUFFIXES :=
 SYSTEMDRIVE = C:
 # environment
 SESSIONNAME = Console
+# makefile (from 'Makefile', line 15)
+FLAGS = -Wall -Wextra -Werror
 # environment
 PROCESSOR_REVISION = 5000
 # default
@@ -192,11 +193,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 25
 # environment
-VSCODE_PID = 6344
+VSCODE_PID = 21824
 # environment
 USERDOMAIN_ROAMINGPROFILE = POONCOM
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=14/122=11%
+# Load=92/1024=9%, Rehash=0, Collisions=13/114=11%
 
 # Pattern-specific Variable Values
 
@@ -207,14 +208,15 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1651875691): 5 files, no impossibilities.
 # C:\windows\System32\WindowsPowerShell\v1.0\ (key C:/windows/System32/WindowsPowerShell/v1.0/, mtime 1651879278): 30 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
-# . (key c:/Poon's works/libft_42bangkok, mtime 1659432325): 14 files, no impossibilities.
+# . (key c:/Poon's works/libft_42bangkok, mtime 1659453719): 14 files, no impossibilities.
 # C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps (key C:/Users/pun_y/AppData/Local/Microsoft/WindowsApps, mtime 1659415239): 38 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1659360780): 8 files, no impossibilities.
 # C:\windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1659431811): 7 files, no impossibilities.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1651875695): 10 files, no impossibilities.
 # C:\Users\pun_y\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/pun_y/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1658471155): 4 files, no impossibilities.
-# C:\windows (key C:/windows, mtime 1658831179): 126 files, no impossibilities.
+# C:\windows (key C:/windows, mtime 1658831179): 126 files 
+, no impossibilities.
 # C:\windows\System32\Wbem (key C:/windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1658831179): 126 files, no impossibilities.
 # C:\msys64\mingw64\bin (key C:/msys64/mingw64/bin, mtime 1658055518): 211 files, no impossibilities.
@@ -231,14 +233,35 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 
 # Files
 
+# Not a target:
+ft_strlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isdigit.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 all: libft.a
+#  Phony target (prerequisite of .PHONY).
 #  Command line target.
-#  Implicit rule search has been done.
+#  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  File has not been updated.
+
+so:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: all clean fclean re so
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .SUFFIXES:
@@ -249,50 +272,43 @@ all: libft.a
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-02 16:20:22
+#  Last modified 2022-08-02 22:21:49
 #  File has been updated.
 #  Successfully updated.
 
-libft.a:
+# Not a target:
+ft_isprint.o:
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
+#  Modification time never checked.
+#  File has not been updated.
+
+libft.a: ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o
+#  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := libft.a
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := 
-# automatic
-# | := 
-# automatic
-# < := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/13=15%
-#  recipe to execute (from 'Makefile', line 25):
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
 	ar rcs $(NAME) $(OBJS)
 
 .c.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 22):
-	gcc -Wall -Wextra -Werror -c $< -o $(<:.c=.o)
+#  recipe to execute (from 'Makefile', line 24):
+	gcc $(FLAGS) -c $< -o $(<:.c=.o)
 
 fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+		rm -f $(NAME)
+
+# Not a target:
+ft_isalpha.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 29):
-	rm -f $(NAME)
 
 # Not a target:
 .DEFAULT:
@@ -301,33 +317,50 @@ fclean: clean
 #  File has not been updated.
 
 re: fclean all
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  File does not exist.
+#  File has no 
+t been updated.
 
 clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	rm $(OBJS)
+
+# Not a target:
+ft_isalnum.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+ft_isascii.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 27):
-	rm -f $(OBJS)
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/26=0%
+# Load=17/1024=2%, Rehash=0, Collisions=0/44=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3583 / storage = 54155 B / avg = 15 B
-# current buf: size = 8174 B / used = 5158 B / count = 312 / avg = 16 B
-# other used: total = 45981 B / count = 3271 / avg = 14 B
+# strcache buffers: 7 (6) / strings = 3591 / storage = 54242 B / avg = 15 B
+# current buf: size = 8174 B / used = 5245 B / count = 320 / avg = 16 B
+# other used: total = 46068 B / count = 3271 / avg = 14 B
 # other free: total = 47 B / max = 13 B / min = 1 B / avg = 7 B
 
-# strcache performance: lookups = 6947 / hit rate = 48%
+# strcache performance: lookups = 6959 / hit rate = 48%
 # hash-table stats:
-# Load=3583/8192=44%, Rehash=0, Collisions=2238/6947=32%
-# Finished Make data base on Tue Aug 02 16:31:19 2022
+# Load=3591/8192=44%, Rehash=0, Collisions=2248/6959=32%
+# Finished Make data base on Tue Aug 02 22:22:04 2022
 
  
+make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
+
