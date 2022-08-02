@@ -12,14 +12,24 @@
 
 NAME = libft.a
 
-GCC = gcc -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror
 
-SRCS = 
+SRCS = $(shell find . -name '*.c')
 
 OBJS = ${SRCS:.c=.o}
 
 all: $(NAME)
 
 .c.o:
-	$(GCC) -c $< -o $(<:.c=.o)
+	gcc $(FLAGS) -c $< -o $(<:.c=.o)
 
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
+
+clean:
+	rm -f $(OBJS)
+
+fclean: clean
+	rm -f  $(NAME)
+
+re: fclean all
