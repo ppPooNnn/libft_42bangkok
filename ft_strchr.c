@@ -8,7 +8,8 @@ char    *strchr (const char *s, int c)
     while (s[count] != '\0')
     {
         if (s[count] == c)
-            return (s)
+            return ((char *) s);
         count++;
     }
+    return (0);
 }

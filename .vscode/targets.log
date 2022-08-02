@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Aug 02 22:58:18 2022
+# Make data base, printed on Tue Aug 02 23:06:56 2022
 
 # Variables
 
@@ -31,8 +31,7 @@ HOMEDRIVE = C:
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
 CURDIR := c:/Poon's works/libft_42bangkok
-# 
- default
+# default
 SHELL := sh.exe
 # environment
 WINDIR = C:\Windows
@@ -49,7 +48,8 @@ TMP = C:\Users\pun_y\AppData\Local\Temp
 # environment
 PROGRAMW6432 = C:\Program Files
 # makefile (from 'Makefile', line 19)
-OBJS = ${SRCS:.c=.o}
+OBJS = ${SRCS:.c=.o 
+}
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
@@ -111,7 +111,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from 'Makefile', line 17)
-SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_toupper.c ft_tolower.c
+SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_toupper.c ft_tolower.c ft_strchr.c
 # default
 MAKE_VERSION := 3.82.90
 # makefile
@@ -210,8 +210,7 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
 # . (key c:/Poon's works/libft_42bangkok, mtime 1659455898): 16 files, no impossibilities.
 # C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps (key C:/Users/pun_y/AppData/Local/Microsoft/WindowsApps, mtime 1659415239): 38 files, no impossibilities.
-# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1659360780): 8 files, no impossibilities 
-.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1659360780): 8 files, no impossibilities.
 # C:\windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1659431811): 7 files, no impossibilities.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1651875695): 10 files, no impossibilities.
@@ -278,17 +277,20 @@ ft_tolower.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-02 22:56:29
+#  Last modified 2022-08-02 23:06:12
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-ft_isprint.o:
+ft_isprint. 
+make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
+
+o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-libft.a: ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o
+libft.a: ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -319,8 +321,7 @@ ft_isalpha.o:
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
-#  Modificati 
-on time never checked.
+#  Modification time never checked.
 #  File has not been updated.
 
 re: fclean all
@@ -344,6 +345,12 @@ ft_isalnum.o:
 #  File has not been updated.
 
 # Not a target:
+ft_strchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 ft_toupper.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -356,23 +363,21 @@ ft_isascii.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=19/1024=2%, Rehash=0, Collisions=0/48=0%
+# Load=20/1024=2%, Rehash=0, Collisions=0/50=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3595 / storage = 54293 B / avg = 15 B
-# current buf: size = 8174 B / used = 5292 B / count = 324 / avg = 16 B
-# other used: total = 46119 B / count = 3271 / avg = 14 B
+# strcache buffers: 7 (6) / strings = 3596 / storage = 54305 B / avg = 15 B
+# current buf: size = 8174 B / used = 5304 B / count = 325 / avg = 16 B
+# other used: total = 46131 B / count = 3271 / avg = 14 B
 # other free: total = 43 B / max = 13 B / min = 3 B / avg = 7 B
 
-# strcache performance: lookups = 6963 / hit rate = 48%
+# strcache performance: lookups = 6964 / hit rate = 48%
 # hash-table stats:
-# Load=3595/8192=44%, Rehash=0, Collisions=2249/6963=32%
-# Finished Make data base on Tue Aug 02 22:58:18 2022
+# Load=3596/8192=44%, Rehash=0, Collisions=2250/6964=32%
+# Finished Make data base on Tue Aug 02 23:06:56 2022
 
  
-make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
-
