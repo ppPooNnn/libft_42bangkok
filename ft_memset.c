@@ -10,4 +10,5 @@ void	*ft_memset (void *s, int c, size_t n)
 		*(char *)(s + count) = (char)c;
 		count++;
 	}
+	return (s);
 }
