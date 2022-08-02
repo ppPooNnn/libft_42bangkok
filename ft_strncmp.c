@@ -13,8 +13,10 @@ int ft_strncmp (const char *s1, const char *s2, size_t n)
             check = (unsigned char *)s1 - (unsigned char *)s2;
             if (check > 0)
                 return (1);
-            else
+            else if (check < 0)
                 return (-1);
+            else
+                return (0);
         }
         s1++;
         s2++;
