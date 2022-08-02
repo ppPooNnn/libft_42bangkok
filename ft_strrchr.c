@@ -9,6 +9,7 @@ char    *ft_strrchr (const char *s, int c)
     {
         if (s[len] == (char)c)
             return ((char *)s);
+        len--;
     }
     return (0);
 }
