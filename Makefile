@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/31 23:24:12 by puttasa           #+#    #+#              #
-#    Updated: 2022/08/02 16:34:47 by marvin           ###   ########.fr        #
+#    Updated: 2022/08/02 22:21:49 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 FLAGS = -Wall -Wextra -Werror
 
-SRCS = $(shell find . -name '*.c')
+SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c
 
 OBJS = ${SRCS:.c=.o}
 
@@ -27,11 +27,11 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm -f $(OBJS)
+	rm $(OBJS)
 
 fclean: clean
-	rm -f  $(NAME)
+		rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re so
