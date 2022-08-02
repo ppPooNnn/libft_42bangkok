@@ -11,7 +11,9 @@ gcc -Wall -Wextra -Werror -c ft_isdigit.c -o ft_isdigit.o
 gcc -Wall -Wextra -Werror -c ft_isprint.c -o ft_isprint.o
  
 gcc -Wall -Wextra -Werror -c ft_strlen.c -o ft_strlen.o
-ar rcs libft.a ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o
  
+gcc -Wall -Wextra -Werror -c ft_toupper.c -o ft_toupper.o
+ 
+ar rcs libft.a ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o
 make.exe: Leaving directory 'c:/Poon's works/libft_42bangkok'
  
