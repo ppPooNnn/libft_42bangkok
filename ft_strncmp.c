@@ -6,7 +6,7 @@ int ft_strncmp (const char *s1, const char *s2, size_t n)
     int check;
 
     count = 0;
-    while (count <= n && (s1[count] || s2[count]))
+    while (count < n && (s1[count] || s2[count]))
     {
         if (s1[count] != s2[count])
         {
