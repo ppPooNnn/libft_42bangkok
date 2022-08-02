@@ -8,6 +8,6 @@ char    *ft_strrchr (const char *s, int c)
     while (len != 0 && s[len] != (char)c)
         len--;
     if (s[len] == (char)c)
-        return ((char *)c);
+        return ((char *)s);
     return (0);
 }
