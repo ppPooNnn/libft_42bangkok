@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Aug 02 23:06:56 2022
+# Make data base, printed on Tue Aug 02 23:59:52 2022
 
 # Variables
 
@@ -31,7 +31,8 @@ HOMEDRIVE = C:
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
 CURDIR := c:/Poon's works/libft_42bangkok
-# default
+# 
+ default
 SHELL := sh.exe
 # environment
 WINDIR = C:\Windows
@@ -48,8 +49,7 @@ TMP = C:\Users\pun_y\AppData\Local\Temp
 # environment
 PROGRAMW6432 = C:\Program Files
 # makefile (from 'Makefile', line 19)
-OBJS = ${SRCS:.c=.o 
-}
+OBJS = ${SRCS:.c=.o}
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
@@ -208,14 +208,15 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1651875691): 5 files, no impossibilities.
 # C:\windows\System32\WindowsPowerShell\v1.0\ (key C:/windows/System32/WindowsPowerShell/v1.0/, mtime 1651879278): 30 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
-# . (key c:/Poon's works/libft_42bangkok, mtime 1659455898): 16 files, no impossibilities.
+# . (key c:/Poon's works/libft_42bangkok, mtime 1659459388): 16 files, no impossibilities.
 # C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps (key C:/Users/pun_y/AppData/Local/Microsoft/WindowsApps, mtime 1659415239): 38 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1659360780): 8 files, no impossibilities.
 # C:\windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1659431811): 7 files, no impossibilities.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1651875695): 10 files, no impossibilities.
 # C:\Users\pun_y\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/pun_y/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1658471155): 4 files, no impossibilities.
-# C:\windows (key C:/windows, mtime 1658831179): 126 files, no impossibilities.
+# C:\windows (key C: 
+/windows, mtime 1658831179): 126 files, no impossibilities.
 # C:\windows\System32\Wbem (key C:/windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1658831179): 126 files, no impossibilities.
 # C:\msys64\mingw64\bin (key C:/msys64/mingw64/bin, mtime 1658055518): 211 files, no impossibilities.
@@ -251,13 +252,7 @@ all: libft.a
 #  File does not exist.
 #  File has not been updated.
 
-so:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-.PHONY: all clean fclean re so
+.PHONY: all clean fclean re
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -277,15 +272,12 @@ ft_tolower.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-02 23:06:12
+#  Last modified 2022-08-02 23:59:49
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-ft_isprint. 
-make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
-
-o:
+ft_isprint.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -363,21 +355,24 @@ ft_isascii.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=20/1024=2%, Rehash=0, Collisions=0/50=0%
+# Load=19/1024=2%, Rehash=0, Collisions=0/48=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3596 / storage = 54305 B / avg = 15 B
-# current buf: size = 8174 B / used = 5304 B / count = 325 / avg = 16 B
-# other used: total = 46131 B / count = 3271 / avg = 14 B
+# strcache buffer 
+make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
+
+s: 7 (6) / strings = 3595 / storage = 54302 B / avg = 15 B
+# current buf: size = 8174 B / used = 5301 B / count = 324 / avg = 16 B
+# other used: total = 46128 B / count = 3271 / avg = 14 B
 # other free: total = 43 B / max = 13 B / min = 3 B / avg = 7 B
 
-# strcache performance: lookups = 6964 / hit rate = 48%
+# strcache performance: lookups = 6963 / hit rate = 48%
 # hash-table stats:
-# Load=3596/8192=44%, Rehash=0, Collisions=2250/6964=32%
-# Finished Make data base on Tue Aug 02 23:06:56 2022
+# Load=3595/8192=44%, Rehash=0, Collisions=2249/6963=32%
+# Finished Make data base on Tue Aug 02 23:59:52 2022
 
  

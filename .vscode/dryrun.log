@@ -1,9 +1,12 @@
 make.exe --dry-run --keep-going --print-directory
 make.exe: Entering directory 'c:/Poon's works/libft_42bangkok'
 gcc -Wall -Wextra -Werror -c ft_isalnum.c -o ft_isalnum.o
+ 
 gcc -Wall -Wextra -Werror -c ft_isalpha.c -o ft_isalpha.o
 gcc -Wall -Wextra -Werror -c ft_isascii.c -o ft_isascii.o
+ 
 gcc -Wall -Wextra -Werror -c ft_isdigit.c -o ft_isdigit.o
+ 
 gcc -Wall -Wextra -Werror -c ft_isprint.c -o ft_isprint.o
  
 gcc -Wall -Wextra -Werror -c ft_strlen.c -o ft_strlen.o
@@ -13,7 +16,7 @@ gcc -Wall -Wextra -Werror -c ft_toupper.c -o ft_toupper.o
 gcc -Wall -Wextra -Werror -c ft_tolower.c -o ft_tolower.o
  
 gcc -Wall -Wextra -Werror -c ft_strchr.c -o ft_strchr.o
-ar rcs libft.a ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o
  
+ar rcs libft.a ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o
 make.exe: Leaving directory 'c:/Poon's works/libft_42bangkok'
  

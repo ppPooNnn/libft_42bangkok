@@ -5,12 +5,12 @@ char    *ft_strchr (const char *s, int c)
     int count;
 
     count = 0;
-    if (s[count] == '\0')
-        return ((char *) s);
+    if ((s[count] == '\0') && (s[count] == (char)c))
+        return ((char *)s);
     while (s[count] != '\0')
     {
         if (s[count] == (char)c)
-            return ((char *) s);
+            return ((char *)s);
         count++;
     }
     return (0);

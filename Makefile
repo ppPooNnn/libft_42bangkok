@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/31 23:24:12 by puttasa           #+#    #+#              #
-#    Updated: 2022/08/02 23:06:12 by marvin           ###   ########.fr        #
+#    Updated: 2022/08/02 23:59:49 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,4 +34,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re so
+.PHONY: all clean fclean re
