@@ -30,6 +30,7 @@ gcc -Wall -Wextra -Werror -c ft_memchr.c -o ft_memchr.o
  
 gcc -Wall -Wextra -Werror -c ft_memcpy.c -o ft_memcpy.o
  
-ar rcs libft.a ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memset.o ft_bzero.o ft_memchr.o ft_memcpy.o
+make.exe: *** No rule to make target 'ft_memcmp.o', needed by 'libft.a'.
+
 make.exe: Leaving directory 'c:/Poon's works/libft_42bangkok'
  
