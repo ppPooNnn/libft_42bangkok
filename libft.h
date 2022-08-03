@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: puttasa <puttasa@student.42bangkok.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/31 23:16:14 by puttasa           #+#    #+#             */
-/*   Updated: 2022/07/31 23:19:53 by puttasa          ###   ########.fr       */
+/*   Created: 2022/08/04 00:16:46 by puttasa           #+#    #+#             */
+/*   Updated: 2022/08/04 00:16:46 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,5 @@ void	*ft_memcpy (void *restrict dest, const void *restrict src, size_t n);
 int	ft_memcmp (const void *s1, const void *s2, size_t n);
 void	ft_bzero (void *s, size_t n);
 size_t	ft_strlen (const char *str);
+
 #endif

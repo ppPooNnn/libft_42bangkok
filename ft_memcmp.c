@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: puttasa <puttasa@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/04 00:25:24 by puttasa           #+#    #+#             */
+/*   Updated: 2022/08/04 00:25:24 by puttasa          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_memcmp (const void *s1, const void *s2, size_t n)
@@ -7,7 +19,7 @@ int	ft_memcmp (const void *s1, const void *s2, size_t n)
 
 	check = 0;
 	count = 0;
-	while (count < n (*(char *)s1 || *(char *)s2))
+	while (count < n (*(unsigned char *)s1 || *(unsigned char *)s2))
 	{
 		if (*(char *)(s1 + count) != *(char *)(s2 + count))
 		{

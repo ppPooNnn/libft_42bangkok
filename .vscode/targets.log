@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Aug 03 23:53:05 2022
+# Make data base, printed on Thu Aug 04 00:29:30 2022
 
 # Variables
 
@@ -31,8 +31,7 @@ HOMEDRIVE = C:
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
 CURDIR := c:/Poon's works/libft_42bangkok
-# 
- default
+# default
 SHELL := sh.exe
 # environment
 WINDIR = C:\Windows
@@ -131,7 +130,8 @@ PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\Wi
 # default
 MAKE_COMMAND := make.exe
 # environment
-PROCESSOR_ARCHITEW6432 = AMD64
+PROCESSOR_ARCHITEW6 
+432 = AMD64
 # environment
 AMDRMSDKPATH = C:\Program Files\AMD\RyzenMasterSDK\
 # default
@@ -213,9 +213,8 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1651875691): 5 files, no impossibilities.
 # C:\windows\System32\WindowsPowerShell\v1.0\ (key C:/windows/System32/WindowsPowerShell/v1.0/, mtime 1651879278): 30 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
-# . (key c:/Poon's works/libft_42bangkok, mtime 1659544462): 22 files, no impossibilities.
-# C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps (key C:/Users/pun_y 
-/AppData/Local/Microsoft/WindowsApps, mtime 1659527546): 49 files, no impossibilities.
+# . (key c:/Poon's works/libft_42bangkok, mtime 1659545602): 23 files, no impossibilities.
+# C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps (key C:/Users/pun_y/AppData/Local/Microsoft/WindowsApps, mtime 1659527546): 49 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1659360780): 8 files, no impossibilities.
 # C:\windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1659431811): 7 files, no impossibilities.
@@ -230,7 +229,7 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\Windows\system32 (key C:/Windows/system32, mtime 1659541656): 2994 files, no impossibilities.
 
-# 6941 files, no impossibilities in 19 directories.
+# 6942 files, no impossibilities in 19 directories.
 
 # Implicit Rules
 
@@ -259,7 +258,8 @@ ft_strlen.o:
 # Not a target:
 ft_isdigit.o:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  Modification ti 
+me never checked.
 #  File has not been updated.
 
 all: libft.a
@@ -302,7 +302,7 @@ ft_strrchr.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-03 23:53:03
+#  Last modified 2022-08-04 00:29:29
 #  File has been updated.
 #  Successfully updated.
 
@@ -378,8 +378,6 @@ clean:
 	rm $(OBJS)
 
 # No 
-make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
-
 t a target:
 ft_isalnum.o:
 #  Implicit rule search has been done.
@@ -412,14 +410,16 @@ ft_isascii.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3628 / storage = 54861 B / avg = 15 B
-# current buf: size = 8174 B / used = 5867 B / count = 355 / avg = 16 B
-# other used: total = 46687 B / count = 3273 / avg = 14 B
-# other free: total = 50 B / max = 12 B / min = 5 B / avg = 8 B
+# strcache buffers: 7 (4) / strings = 3629 / storage = 54873 B / avg = 15 B
+# current buf: size = 8174 B / used = 5889 B / count = 356 / avg = 16 B
+# other used: total = 46699 B / count = 3273 / avg = 14 B
+# other free: total = 60 B / max = 20 B / min = 1 B / avg = 10 B
 
-# strcache performance: lookups = 7003 / hit rate = 48%
+# strcache performance: lookups = 7004 / hit rate = 48%
 # hash-table stats:
-# Load=3628/8192=44%, Rehash=0, Collisions=2287/7003=33%
-# Finished Make data base on Wed Aug 03 23:53:05 2022
+# Load=3629/8192=44%, Rehash=0, Collisions=2287/7004=33%
+# Finished Make data base on Thu Aug 04 00:29:30 2022
 
  
+make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
+
