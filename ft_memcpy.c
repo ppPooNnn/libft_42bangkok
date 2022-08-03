@@ -7,6 +7,6 @@ void	*ft_memcpy (void *restrict dest, const void *restrict src, size_t n)
 	count = 0;
 	while (count < n)
 	{
-		(char *) dest + count = (char *) src + count;
+		*(char *)(dest + count) = *(char *)(src + count);
 	}
 }
