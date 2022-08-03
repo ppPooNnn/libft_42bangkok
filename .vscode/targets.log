@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Aug 03 03:14:11 2022
+# Make data base, printed on Wed Aug 03 23:42:39 2022
 
 # Variables
 
@@ -31,7 +31,8 @@ HOMEDRIVE = C:
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
 CURDIR := c:/Poon's works/libft_42bangkok
-# default
+# 
+ default
 SHELL := sh.exe
 # environment
 WINDIR = C:\Windows
@@ -44,6 +45,8 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
 TMP = C:\Users\pun_y\AppData\Local\Temp
 # environment
 PROGRAMW6432 = C:\Program Files
@@ -54,7 +57,7 @@ PROGRAMDATA = C:\ProgramData
 # environment
 VSCODE_CWD = C:\Users\pun_y\AppData\Local\Programs\Microsoft VS Code
 # environment
-PATH = C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps;C:\Users\pun_y\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;C:\MinGW\bin;
+PATH = C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps;C:\Users\pun_y\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;C:\MinGW\bin;C:\Users\pun_y\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pip;
 # environment
 ONLINESERVICES = Online Services
 # environment
@@ -70,12 +73,11 @@ NUMBER_OF_PROCESSORS = 12
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
-.FEAT 
-URES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21824_GHOEECSDXPCZNNXS
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11336_QFDOWVIGMCAFYEQM
 # environment
 COMPUTERNAME = POONCOM
 # environment
@@ -111,7 +113,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from 'Makefile', line 17)
-SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memset.c ft_bzero.c ft_memchr.c
+SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memset.c ft_bzero.c ft_memchr.c ft_memcpy.c
 # default
 MAKE_VERSION := 3.82.90
 # makefile
@@ -193,11 +195,13 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 25
 # environment
-VSCODE_PID = 21824
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 11336
 # environment
 USERDOMAIN_ROAMINGPROFILE = POONCOM
 # variable set hash-table stats:
-# Load=92/1024=9%, Rehash=0, Collisions=13/114=11%
+# Load=94/1024=9%, Rehash=0, Collisions=13/116=11%
 
 # Pattern-specific Variable Values
 
@@ -205,33 +209,40 @@ USERDOMAIN_ROAMINGPROFILE = POONCOM
 
 # Directories
 
+# C:\Users\pun_y\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pip (key C:/Users/pun_y/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0/LocalCache/local-packages/Python310/site-packages/pip, mtime 1659527614): 9 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1651875691): 5 files, no impossibilities.
 # C:\windows\System32\WindowsPowerShell\v1.0\ (key C:/windows/System32/WindowsPowerShell/v1.0/, mtime 1651879278): 30 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
-# . (key c:/Poon's works/libft_42bangkok, mtime 1659471003): 21 files, no impossibilities.
-# C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps (key C:/Users/pun_y/AppData/Local/Microsoft/WindowsApps, mtime 1659415239): 38 files, no impossibilities.
+# . (key c:/Poon's works/libft_42bangkok, mtime 1659544462): 22 files, no impossibilities.
+# C:\Users\pun_y\AppData\Local\Microsoft\WindowsApps (key C:/Users/pun_y/AppData/Loc 
+al/Microsoft/WindowsApps, mtime 1659527546): 49 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1659360780): 8 files, no impossibilities.
 # C:\windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1659431811): 7 files, no impossibilities.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1651875695): 10 files, no impossibilities.
 # C:\Users\pun_y\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/pun_y/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1658471155): 4 files, no impossibilities.
-# C:\windows (key C:/windows, mtime 1658831179): 126 files, no impossibilities.
+# C:\windows (key C:/windows, mtime 1659527264): 129 files, no impossibilities.
 # C:\windows\System32\Wbem (key C:/windows/System32/Wbem, mtime 1653744334): 155 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1658831179): 126 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1659527264): 129 files, no impossibilities.
 # C:\msys64\mingw64\bin (key C:/msys64/mingw64/bin, mtime 1658055518): 211 files, no impossibilities.
-# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 
- 1651879278): 30 files, no impossibilities.
-# C:\windows\system32 (key C:/windows/system32, mtime 1659367714): 2994 files, no impossibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1651879278): 30 files, no impossibilities.
+# C:\windows\system32 (key C:/windows/system32, mtime 1659541656): 2994 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1659367714): 2994 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1659541656): 2994 files, no impossibilities.
 
-# 6914 files, no impossibilities in 18 directories.
+# 6941 files, no impossibilities in 19 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
+
+# Not a target:
+ft_memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 ft_strlen.o:
@@ -285,17 +296,18 @@ ft_strrchr.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-03 03:14:09
+#  Last modified 2022-08-03 23:42:38
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 ft_isprint.o:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  Modification time never  
+checked.
 #  File has not been updated.
 
-libft.a: ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memset.o ft_bzero.o ft_memchr.o
+libft.a: ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_strlen.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memset.o ft_bzero.o ft_memchr.o ft_memcpy.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -379,30 +391,29 @@ ft_toupper.o:
 #  File has not been updated.
 
 # Not a target:
-ft_is 
-make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
-
-ascii.o:
+ft_isascii.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=24/1024=2%, Rehash=0, Collisions=4/58=7%
+# Load=25/1024=2%, Rehash=0, Collisions=4/60=7%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3605 / storage = 54424 B / avg = 15 B
-# current buf: size = 8174 B / used = 5419 B / count = 332 / avg = 16 B
-# other used: total = 46250 B / count = 3273 / avg = 14 B
-# other free: total = 39 B / max = 10 B / min = 2 B / avg = 6 B
+# strcache buffers: 7 (6) / strings = 3627 / storage = 54849 B / avg = 15 B
+# current buf: size = 8174 B / used = 5855 B / count = 354 / avg = 16 B
+# other used: total = 46675 B / count = 3273 / avg = 14 B
+# other free: total = 50 B / max = 12 B / min = 5 B / avg = 8 B
 
-# strcache performance: lookups = 6973 / hit rate = 48%
+# strcache performance: lookups = 7002 / hit rate = 48%
 # hash-table stats:
-# Load=3605/8192=44%, Rehash=0, Collisions=2265/6973=32%
-# Finished Make data base on Wed Aug 03 03:14:11 2022
+# Load=3627/8192=44%, Rehash=0, Collisions=2285/7002=33%
+# Finished Make data base on Wed Aug 03 23:42:39 2022
 
  
+make.exe: *** No rule to make target 'ft_isalnum.o', needed by 'libft.a'.  Stop.
+
