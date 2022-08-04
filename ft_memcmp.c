@@ -19,11 +19,11 @@ int	ft_memcmp (const void *s1, const void *s2, size_t n)
 
 	check = 0;
 	count = 0;
-	while (count < n (*(unsigned char *)s1 || *(unsigned char *)s2))
+	while (count < n && ((char *)s1[count] || (char *)s2[count]))
 	{
-		if (*(char *)(s1 + count) != *(char *)(s2 + count))
+		if ((unsigned char *)s1[count] != (unsigned char *)s2[count])
 		{
-			check = (unsigned char *)(s1 + count) - (unsigned char *)(s2 + count);
+			check = (unsigned char *)s1[count] - (unsigned char *)s2[count];
 			if (check > 0)
 				return (1);
 			else if (check < 0)
@@ -33,4 +33,5 @@ int	ft_memcmp (const void *s1, const void *s2, size_t n)
 		}
 		count++;
 	}
+	return (0);
 }
