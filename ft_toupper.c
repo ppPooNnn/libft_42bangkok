@@ -6,15 +6,15 @@
 /*   By: puttasa <puttasa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/04 00:25:58 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/04 00:25:58 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/08/06 03:46:19 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper (int c)
+int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
-        c += 'A' - 'a';
-    return (c);
+	if (c >= 'a' && c <= 'z')
+		c += 'A' - 'a';
+	return (c);
 }
