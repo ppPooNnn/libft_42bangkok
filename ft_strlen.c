@@ -6,21 +6,21 @@
 /*   By: puttasa <puttasa@student.42bangkok.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/04 00:16:35 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/04 00:16:35 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/08/05 22:33:20 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen (const char *str)
+size_t	ft_strlen(const char *str)
 {
-    size_t len;
+	size_t	len;
 
-    len = 0;
-    while (*str != '\0')
-    {
-        str++;
-        len++;
-    }
-    return (len);
+	len = 0;
+	while (*str != '\0')
+	{
+		str++;
+		len++;
+	}
+	return (len);
 }

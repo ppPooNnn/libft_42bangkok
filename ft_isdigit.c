@@ -6,15 +6,15 @@
 /*   By: puttasa <puttasa@student.42bangkok.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/04 00:16:15 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/04 00:16:15 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/08/05 22:22:43 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit (int c)
+int	ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
-        return (1);
-    return (0);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
