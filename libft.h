@@ -6,7 +6,7 @@
 /*   By: puttasa <puttasa@student.42bangkok.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/04 00:16:46 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/06 03:58:25 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/08/12 15:50:39 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memcpy(void *restrict dest, const void *restrict src, size_t n);
 void	ft_bzero(void *s, size_t n);
 size_t	ft_strlen(const char *str);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 #endif
