@@ -1,39 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 18:16:33 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/19 22:10:07 by puttasa          ###   ########.fr       */
+/*   Created: 2022/08/13 13:54:08 by puttasa           #+#    #+#             */
+/*   Updated: 2022/08/19 23:10:16 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	c;
+	size_t	count;
+	size_t	strcount;
 
-	c = 0;
-	if (!(dest || src))
-		return (dest);
-	if (dest > src)
+	count = 0;
+	strcount = 0;
+	if (!little)
+		return ((char *)big);
+	while (count < len && *big != '\0')
 	{
-		while (n > 0)
-		{
-			((unsigned char *)dest)[n - 1] = ((unsigned char *)src)[n - 1];
-			n--;
-		}
+		while (*(big + count + strcount) && *(little + strcount) && *(little + count) == *(big + count + strcount))
+			strcount++;
+		if (strcount == len)
+			return ((char *)(big + count));
+		count++;
 	}
-	else
-	{
-		while (c < n)
-		{
-			*((unsigned char *)dest + c) = *((unsigned char *)src + c);
-			c++;
-		}
-	}
-	return (dest);
+	return (0);
 }
