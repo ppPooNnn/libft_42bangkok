@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/13 13:54:08 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/19 23:41:33 by puttasa          ###   ########.fr       */
+/*   Created: 2022/08/20 00:26:20 by puttasa           #+#    #+#             */
+/*   Updated: 2022/08/20 00:48:27 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+int	ft_atoi(const char *str)
 {
-	size_t	i;
-	size_t	j;
+	int	sign;
+	int	res;
 
-	i = 0;
-	j = 0;
-	if (!little[0])
-		return ((char *)big);
-	while (i < len && big[i] != '\0')
+	sign = 1;
+	res = 0;
+	while (!*str)
 	{
-		while (big[i + j] && little[j] && (little[j] == big[i + j]))
-			j++;
-		if (j == len)
-			return ((char *)&big[i - j + 1]);
-		i++;
+		if ((*str == '-' || *str == '+'))
+		{
+			if (*str == '-')
+				sign *= -1;
+			str++;
+		}
+		if (*str >= '0' && *str <= '9')
+		{
+			res = (res * 10) + (*str - 48);
+			str++;
+		}
+		else
+			str++;
 	}
-	return (0);
+	return (res * sign);
 }
