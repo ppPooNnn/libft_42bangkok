@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/20 11:38:39 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/25 11:26:54 by puttasa          ###   ########.fr       */
+/*   Created: 2022/08/25 11:21:35 by puttasa           #+#    #+#             */
+/*   Updated: 2022/08/25 11:56:34 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	void	*address;
+	int		i;
+	char	*substr;
 
-	address = malloc(count * size);
-	if (!address)
+	i = 0;
+	substr = malloc(sizeof(*s) * (len + 1));
+	if (!substr || !s)
 		return (0);
-	ft_bzero(address, count * size);
-	return (address);
+	while (s[start] != '\0' && start < ft_strlen(s))
+	{
+		substr[i] = s[start];
+		i++;
+		start++;
+	}
+	substr[i] = '\0';
+	return (substr);
 }

@@ -6,7 +6,7 @@
 /*   By: puttasa <puttasa@student.42bangkok.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/04 00:16:46 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/20 11:39:45 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/08/25 11:54:43 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ char	*ft_strdup(const char *src);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
