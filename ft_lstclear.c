@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/11 20:26:19 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/27 16:03:50 by puttasa          ###   ########.fr       */
+/*   Created: 2022/08/27 12:49:52 by puttasa           #+#    #+#             */
+/*   Updated: 2022/08/27 12:53:31 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	size_t	count;
+	t_list	*node;
 
-	count = 0;
-	if (size == 0)
-		return (ft_strlen(src));
-	while (count < size - 1 && *(src + count) != '\0')
+	node = *lst;
+	while (node)
 	{
-		*(dst + count) = *(src + count);
-		count++;
+		(*del)(node -> content);
+		*lst = node -> next;
+		free(node);
+		node = *lst;
 	}
-	*(dst + count) = '\0';
-	return (ft_strlen(src));
 }

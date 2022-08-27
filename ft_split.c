@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 15:58:04 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/27 10:04:43 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/08/27 16:19:13 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,23 +54,24 @@ char	**ft_split(char const *s, char c)
 {
 	char	**res;
 	size_t	i;
-	size_t	j;
 
 	i = 0;
-	j = 0;
 	if (!s)
 		return (0);
 	res = malloc((wordcount(s, c) + 1) * sizeof(char *));
 	if (!res)
 		return (0);
-	while (i < wordcount(s, c))
+	while (*s)
 	{
-		while (s[j] && s[j] == c)
-			j++;
-		res[i] = wordcpy(&s[j], c);
-		while (s[i] && s[j] != c)
-			j++;
-		i++;
+		while (*s && *s == c)
+			s++;
+		if (*s != c && *s)
+		{
+			res[i] = wordcpy(s, c);
+			i++;
+		}
+		while (*s && *s != c)
+			s++;
 	}
 	res[i] = NULL;
 	return (res);

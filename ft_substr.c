@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 11:21:35 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/25 12:23:02 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/08/27 16:46:35 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,22 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
+	size_t	relen;
 	char	*substr;
 
 	i = 0;
-	substr = malloc(len + 1);
-	if (!substr || !s)
+	if (!s)
 		return (0);
-	ft_bzero (substr, len + 1);
-	while (s[start] != '\0' && start < ft_strlen(s) && i < len)
+	relen = len;
+	if (start > ft_strlen(s))
+		relen = 0;
+	else if (ft_strlen(s) - start < len)
+		relen = ft_strlen(s) - start;
+	substr = malloc(relen + 1);
+	if (!substr)
+		return (0);
+	ft_bzero (substr, relen + 1);
+	while (s[start] != '\0' && start < ft_strlen(s) && i < relen)
 	{
 		substr[i] = s[start];
 		i++;

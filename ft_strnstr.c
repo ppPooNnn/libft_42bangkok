@@ -6,7 +6,7 @@
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/13 13:54:08 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/24 17:42:26 by puttasa          ###   ########.fr       */
+/*   Updated: 2022/08/27 16:23:06 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		return ((char *)big);
 	while (i < len && big[i] != '\0')
 	{
-
 		if (big[i] == little[0])
 		{
 			while (big[i + j] == little[j] && little[j] && i + j < len)
@@ -31,13 +30,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			if (!little[j])
 				return ((char *)&big[i]);
 		}
-		/*
-		while (big[i + j] && little[j] && (little[j] == big[i + j]))
-			j++;
-		if (j == len)
-			return ((char *)&big[i - j + 1]);
-		i++;
-		*/
 		i++;
 	}
 	return (0);

@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/11 20:26:19 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/27 16:03:50 by puttasa          ###   ########.fr       */
+/*   Created: 2022/08/27 11:59:53 by puttasa           #+#    #+#             */
+/*   Updated: 2022/08/27 12:12:05 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	size_t	count;
-
-	count = 0;
-	if (size == 0)
-		return (ft_strlen(src));
-	while (count < size - 1 && *(src + count) != '\0')
+	if (new)
 	{
-		*(dst + count) = *(src + count);
-		count++;
+		new -> next = *lst;
+		*lst = new;
 	}
-	*(dst + count) = '\0';
-	return (ft_strlen(src));
 }

@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: puttasa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/11 20:26:19 by puttasa           #+#    #+#             */
-/*   Updated: 2022/08/27 16:03:50 by puttasa          ###   ########.fr       */
+/*   Created: 2022/08/27 14:50:31 by puttasa           #+#    #+#             */
+/*   Updated: 2022/08/27 15:10:06 by puttasa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t	count;
+	t_list	*use;
+	t_list	*temp;
 
-	count = 0;
-	if (size == 0)
-		return (ft_strlen(src));
-	while (count < size - 1 && *(src + count) != '\0')
+	use = NULL;
+	while (lst)
 	{
-		*(dst + count) = *(src + count);
-		count++;
+		temp = ft_lstnew((*f)(lst -> content));
+		if (!temp)
+		{
+			ft_lstclear(&temp, del);
+			return (0);
+		}
+		ft_lstadd_back(&use, temp);
+		lst = lst -> next;
 	}
-	*(dst + count) = '\0';
-	return (ft_strlen(src));
+	return (use);
 }
